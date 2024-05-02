@@ -72,8 +72,8 @@ const Products = () => {
                                 <div className='cvp'>
                                 <h5 className="card-title font-weight-bold">{producto.title}</h5>
                                 <p className="card-text">${producto.price}</p>
-                                <a href="#" className="btn details">Ver Detalles</a><br />
-                                <a href="#" className="btn cart">AÑADIR AL CARRITO</a>
+                                <a href="#" className="btn details bg-black text-white">Ver Detalles</a><br />
+                                <a href="#" className="btn cart bg-black text-white">AÑADIR AL CARRITO</a>
                                 </div>
                                 </div>
                                 </div>

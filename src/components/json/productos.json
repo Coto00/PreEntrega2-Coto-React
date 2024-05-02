@@ -1,0 +1,98 @@
+[
+        {
+                "id": 1,
+                "title": "Remera HappyInside",
+                "price": 15999,
+                "img":"./public/images/imagen1.jpg",
+                "stock": 15,
+                "category":"remeras"
+        },
+        {
+                "id": 2,
+                "title": "Remera Nature",
+                "price": 15999,
+                "img":"./public/images/imagen2.jpg",
+                "stock": 18,
+                "category":"remeras"
+        },
+        {
+                "id": 3,
+                "title": "Remera BrokenHeart",
+                "price": 14499,
+                "img":"./public/images/imagen3.jpg",
+                "stock": 7,
+                "category":"remeras"
+        },
+        {
+                "id": 4,
+                "title": "Remera Emilia",
+                "price": 15999,
+                "img":"./public/images/imagen4.jpg",
+                "stock": 8,
+                "category":"remeras"
+        },
+        {
+                "id": 5,
+                "title": "Remera Tupac",
+                "price": 13999,
+                "img":"./public/images/imagen5.jpg",
+                "stock": 10,
+                "category":"remeras"
+        },
+        {
+                "id": 6,
+                "title": "Remera Tortuga",
+                "price": 13999,
+                "img":"./public/images/imagen6.jpg",
+                "stock": 10,
+                "category":"remeras"
+        },
+        {
+                "id": 7,
+                "title": "Remera Summer",
+                "price": 14499,
+                "img":"./public/images/imagen7.jpg",
+                "stock": 20,
+                "category":"remeras"
+        },
+        {
+                "id": 8,
+                "title": "Remera 1975",
+                "price": 15999,
+                "img":"./public/images/imagen8.jpg",
+                "stock": 20,
+                "category":"remeras"
+        },
+        {
+                "id": 9,
+                "title": "BUZO BOB´S NEGRO",
+                "price": 34499,
+                "img":"images/buzo-1.jpeg",
+                "stock": 20,
+                "category": "buzos"
+        },
+        {
+                "id": 10,
+                "title": "BUZO BOB´S BEIGE",
+                "price": 34499,
+                "img":"images/buzo-2.jpeg",
+                "stock": 20,
+                "category": "buzos"
+        },
+        {
+                "id": 11,
+                "title": "CAMPERA BOB´S JEAN GRIS",
+                "price": 34499,
+                "img":"images/campera-2.jpeg",
+                "stock": 20,
+                "category": "camperas"
+        },
+        {
+                "id": 12,
+                "title": "CAMPERA BOB´S JEAN BLANCO",
+                "price": 34499,
+                "img":"images/campera-1.jpeg",
+                "stock": 20,
+                "category": "camperas"
+        }
+]

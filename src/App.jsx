@@ -5,6 +5,7 @@ import Cards from "./components/Cards"
 import Products from "./components/Products"
 import EjemploFetch from "./components/EjemploFetch"
 import ItemCount from "./components/ItemCount"
+import ItemDetailContainer from "./components/ItemDetailContainer"
 
 
 
@@ -14,13 +15,13 @@ function App() {
     
     <NavBar/>
     <Carousel/>
-    <ItemListContainer mensaje={"PRODUCTOS EN OFERTA"} />
-    <Cards/>
-    <ItemCount/>
-    <ItemListContainer mensaje={"MAS PRODUCTOS QUE PUEDEN INTERESARTE"} />
+    
+    
+    <ItemListContainer />
+    <ItemDetailContainer />
     <Products/>
 
-    <EjemploFetch/>
+    
     </>
   )
 }
