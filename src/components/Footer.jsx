@@ -2,13 +2,63 @@
 
 const Footer = () => {
         return(
-                <div className="card text-bg-dark">
-                <img src="./images/fondo-footer.png" className="card-img" alt="..."/>
-                <div className="card-img-overlay">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p className="card-text"><small>Last updated 3 mins ago</small></p>
+                <div className="container bg-white">
+                <footer className="py-5">
+                <div className="row ">
+                <div className="col-6 col-md-2 mb-3">
+                        <h5>Tienda</h5>
+                        <ul className="nav flex-column">
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Remeras</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Buzos</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Camperas</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Ofertas</a></li>
+                        </ul>
                 </div>
+
+                <div className="col-6 col-md-2 mb-3">
+                        <h5>Ayuda</h5>
+                        <ul className="nav flex-column">
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Arrepentimiento</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Formas de Pago</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Envios y Cambios</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Guia de talles</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Como Comprar</a></li>
+                        </ul>
+                </div>
+
+                <div className="col-6 col-md-2 mb-3">
+                        <h5>Compania</h5>
+                        <ul className="nav flex-column">
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Terminos y Condiciones</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Defensa del Consumidor</a></li>
+                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Politica de privacidad</a></li>
+                        </ul>
+                </div>
+
+                <div className="col-md-5 offset-md-1 mb-3">
+                        <form>
+                        <h5>Subscribete para Recibir Novedades</h5>
+                        <p>Resumen mensual de nuestras novedades.</p>
+                        <div className="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" className="visually-hidden">Direccion de Correo</label>
+                        <input id="newsletter1" type="text" className="form-control" placeholder="Direccion de Correo"/>
+                        <button className="btn btn-primary" type="button">Subscribete</button>
+                        </div>
+                        </form>
+                </div>
+                
+                </div>
+
+                <div className="d-flex flex-column flex-sm-row justify-content-around py-4 my-4 border-top">
+                <p>© 2024 BOB´S, Inc. Todos los derechos reservados.</p>
+                <ul className="list-unstyled d-flex">
+                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/twitter.svg" alt="Twitter Icon"/></a></li>
+                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/facebook.svg" alt="Facebook Icon"/></a></li>
+                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/instagram.svg" alt="Instagram Icon"/></a></li>
+                        
+                </ul>
+                </div>
+                </footer>
                 </div>
         )
 }
