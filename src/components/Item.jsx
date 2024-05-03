@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Item = ({item}) => {
         return(
-                <div className="col-md-4 text-center">
+                <div className="col-md-3 text-center">
                         <Link to={"/item/"+ item.id} className="text-decoration-none">
-                        <div className="card">
-                        <img src={item.img} className="img-fluid" alt={item.title} />
+                        <div className="card" style={{ width: "300px", height: "500px" }}>
+                        <img src={item.img} className="card-img-top" style={{ width: "100%", height: "300px" }} alt={item.title} />
                         <div className="card-body">
                         <h5 className="card-title text-uppercase">{item.title}</h5>
                         <p className="card-text">${item.price}</p>
