@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Item = ({item}) => {
         return(
                 <div className="col-md-4 text-center">
+                        <Link to={"/item/"+ item.id} className="text-decoration-none">
                         <div className="card">
                         <img src={item.img} className="img-fluid" alt={item.title} />
                         <div className="card-body">
@@ -10,6 +13,7 @@ const Item = ({item}) => {
                         <a href="#" className="btn cart bg-black text-white">AÑADIR AL CARRITO</a>
                         </div>
                         </div>
+                        </Link>
                 </div>
         )
 }

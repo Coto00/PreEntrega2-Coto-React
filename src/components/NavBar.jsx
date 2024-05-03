@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png"
 import CartWidget from "./CartWidget";
 
@@ -10,9 +11,9 @@ const NavBar = () => {
                                 <div className="col">
                                 </div>
                                 <div className="col-md text-center">
-                                        <a href="#">
+                                        <Link to={"/"}>
                                                 <img src={logo} alt="BOB´S" width={150}/>
-                                        </a>
+                                        </Link>
                                 </div>
                                 <div className="col d-flex align-items-center justify-content-end">
                                         <CartWidget />
@@ -24,20 +25,20 @@ const NavBar = () => {
                                 <div className="col">
                                         <ul className="nav justify-content-center">
                                         <li className="nav-item">
-                                                <a className="nav-link text-dark" aria-current="page" href="#">Home</a>
+                                                <NavLink className="nav-link text-dark" aria-current="page" to={"/"}>Inicio</NavLink>
                                         </li>
                                         <li className="nav-item dropdown">
-                                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Productos</a>
+                                                <NavLink className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to={"/category/"} role="button" aria-expanded="false">Productos</NavLink>
                                                 <ul className="dropdown-menu">
-                                                <li><a className="dropdown-item" href="#">Remeras</a></li>
-                                                <li><a className="dropdown-item" href="#">Buzos</a></li>
-                                                <li><a className="dropdown-item" href="#">Camperas</a></li>
+                                                <li><NavLink className="dropdown-item" to={"/category/remeras"}>Remeras</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to={"/category/buzos"}>Buzos</NavLink></li>
+                                                <li><NavLink className="dropdown-item" to={"/category/camperas"}>Camperas</NavLink></li>
                                                 <li className="dropdown-divider"></li>
-                                                <li><a className="dropdown-item" href="#">Separated link</a></li>
+                                                <li><NavLink className="dropdown-item" to={"/category/ofertas"}>Ofertas</NavLink></li>
                                                 </ul>
                                         </li>
                                         <li>
-                                                <a className="nav-link text-dark" href="#">Contacto</a>
+                                                <NavLink className="nav-link text-dark" to={"/category/contacto"}>Contacto</NavLink>
                                         </li>
                                         
                                         </ul>
