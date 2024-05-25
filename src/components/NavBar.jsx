@@ -9,11 +9,12 @@ const NavBar = () => {
                         <div className="container-fluid">
                         <div className="row bg-white">
                                 <div className="col">
-                                </div>
-                                <div className="col-md text-center">
-                                        <Link to={"/"}>
+                                <Link to={"/"}>
                                                 <img src={logo} alt="BOB´S" width={150}/>
                                         </Link>
+                                </div>
+                                <div className="col-md text-center">
+                                        
                                 </div>
                                 <div className="col d-flex align-items-center justify-content-end">
                                         <CartWidget />

@@ -15,12 +15,17 @@ function App() {
     <BrowserRouter>
     
     <NavBar/>
-    <Carousel/>
-    <CartContextProvider>
-      <Cards/>
-    </CartContextProvider>
+    
     <Routes>
-      <Route path={"/"} element={<ItemListContainer/>}/>
+      <Route path={"/"} element={
+        <>
+        <Carousel/>
+        <CartContextProvider>
+        <Cards/>
+        </CartContextProvider>
+        <ItemListContainer/>
+        </>
+      }/>
       <Route path={"/category/:id"} element={<ItemListContainer/>}/>
       <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
       <Route path={"*"} element={<Error404/>}/>
