@@ -1,14 +1,12 @@
 import NavBar from "./components/NavBar"
 import ItemListContainer from "./components/ItemListContainer"
 import Carousel from "./components/Carousel"
-import Cards from "./components/Cards"
-import Products from "./components/Products"
-import EjemploFetch from "./components/EjemploFetch"
-import ItemCount from "./components/ItemCount"
 import ItemDetailContainer from "./components/ItemDetailContainer"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Error404 from "./components/Error404"
 import Footer from "./components/Footer"
+import Cards from "./components/Cards";
+import CartContextProvider from "./components/context/CartContext";
 
 
 
@@ -18,6 +16,9 @@ function App() {
     
     <NavBar/>
     <Carousel/>
+    <CartContextProvider>
+      <Cards/>
+    </CartContextProvider>
     <Routes>
       <Route path={"/"} element={<ItemListContainer/>}/>
       <Route path={"/category/:id"} element={<ItemListContainer/>}/>
