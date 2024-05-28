@@ -7,7 +7,8 @@ import Error404 from "./components/Error404"
 import Footer from "./components/Footer"
 import Cards from "./components/Cards";
 import CartContextProvider from "./components/context/CartContext";
-
+import './App.css'
+import Contacto from "./components/Contacto";
 
 
 function App() {
@@ -20,13 +21,12 @@ function App() {
       <Route path={"/"} element={
         <>
         <Carousel/>
-        <CartContextProvider>
-        <Cards/>
-        </CartContextProvider>
+        
         <ItemListContainer/>
         </>
       }/>
       <Route path={"/category/:id"} element={<ItemListContainer/>}/>
+      <Route path={"/category/Contacto"} element={<Contacto/>}/>
       <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
       <Route path={"*"} element={<Error404/>}/>
     </Routes>
@@ -37,3 +37,8 @@ function App() {
 
 
 export default App
+
+
+// <CartContextProvider>
+//<Cards/>
+//</CartContextProvider>

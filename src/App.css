@@ -1,0 +1,43 @@
+.custom-navbar {
+        background-color: #f8f9fa; /* Blanco-gris */
+        padding: 10px 0; /* Espacio vertical */
+    }
+    
+    .navbar-spacer {
+        height: 180px; /* Ajusta esta altura para que coincida con la altura real del navbar */
+    }
+
+    .navbar-nav .nav-item .btn {
+        margin: 0 10px; /* Espaciado entre botones */
+        outline: none; /* Quita el outline al hacer click */
+        box-shadow: none; /* Quita la sombra al hacer click */
+        transition: none; /* Desactiva transiciones para evitar efectos de clic */
+    }
+    
+    
+    .navbar-nav .nav-item .nav-item-link {
+        color: #ffffff; /* Texto blanco */
+    }
+    
+    
+    .dropdown-menu {
+        background-color: #080808; /* Fondo oscuro del dropdown */
+    }
+    
+    .dropdown-item {
+        color: #ffffff !important; /* Texto blanco en los items del dropdown */
+    }
+    
+    .fixed-top {
+        background-color: #f8f9fa;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de elevación */
+    }
+    
+    .slider-container {
+        max-width: 1200px; /* Ancho máximo para centrar contenido */
+        margin-bottom: 50px; 
+    }
+    
+    .navbar-toggler {
+        border: none;
+    }

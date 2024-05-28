@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import arrayProductos from "./json/productos.json"
 import ItemDetail from "./ItemDetail";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
         const [item, setItem] = useState([]);
@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
                         setTimeout(() => {
                                 const producto = arrayProductos.find(item => item.id === parseInt(id));
                                 resolve(producto);
-                        }, 2000)
+                        },)
                 });
 
                 promesa.then(respuesta => {
@@ -23,6 +23,13 @@ const ItemDetailContainer = () => {
 
         return(
                 <div className="container">
+                        <div className="row">
+                                <div className="col">
+                                <Link to={"/"}>
+                                        <button className="btn bg-dark text-white">← Volver</button>
+                                </Link>
+                                </div>
+                        </div>
                         <div className="row my-5">
                                         <ItemDetail item={item}/>
                         </div>

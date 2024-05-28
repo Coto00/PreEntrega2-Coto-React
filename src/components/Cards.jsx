@@ -23,14 +23,14 @@ const Cards = () => {
                                 <p className="card-text text-center">
                                         <b>{item.title}</b><br />${item.price}
                                 </p>
-                                <p className="text-center">
-                                        {item.envioGratis ? <span className="text-white bg-dark p-2">ENVIO GRATIS</span> : ""}
-                                </p>
                                 <p>
                                         <button className="btn bg-dark text-white" onClick={() => { agregarProducto(item.id); }}>Agregar (+)</button>
                                 </p>
+                                <p className="text-center">
+                                        {item.envioGratis ? <span className="text-white bg-dark p-1">ENVIO GRATIS</span> : ""}
+                                </p>
                                 </div>
-                        </div>
+                                </div>
                         </div>
                 ))}
                 </div>
@@ -39,3 +39,4 @@ const Cards = () => {
 }
 
 export default Cards;
+

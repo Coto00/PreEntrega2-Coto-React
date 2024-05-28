@@ -1,7 +1,7 @@
 const Carousel = () => {
         return(
                 <>
-                <div className="container-fluid">
+                <div className="container slider-container">
                         <div className="row">
                                 <div className="col">
                                         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">

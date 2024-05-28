@@ -1,6 +1,12 @@
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({item}) => {
+
+        const priceIn3Cuotas = item.price / 3;
+        const priceIn6Cuotas = (item.price * 1.10) / 6;
+        const priceIn12Cuotas = (item.price * 1.25) / 12;
+        
+
         return(
                 <div className="container">
                         <div className="row">
@@ -9,7 +15,14 @@ const ItemDetail = ({item}) => {
                                 </div>
                                 <div className="col">
                                         <h1>{item.title}</h1>
-                                        <p><b>${item.price}</b></p>
+                                        <p><h3><b>${item.price}</b><br /></h3>
+                                        3 Cuotas sin interes de <b>${priceIn3Cuotas.toFixed(3)}</b>, 
+                                        6 Cuotas de <b>${priceIn6Cuotas.toFixed(3)}</b> con 10% recargo y 
+                                        12 Cuotas de <b>${priceIn12Cuotas.toFixed(3)}</b> con 25 % recargo.
+                                        </p>
+                                        <h3>Descripcion</h3>
+                                        <p>{item.descripcion}</p>
+                                        
                                         <ItemCount stock={item.stock}/>
                                 </div>
                         </div>

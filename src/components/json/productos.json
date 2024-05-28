@@ -1,98 +1,168 @@
 [
         {
                 "id": 1,
-                "title": "Remera HappyInside",
-                "price": 15999,
-                "img":"./public/images/imagen1.jpg",
+                "title": "Camiseta Nike Dri-Fit Miler",
+                "price": 59.299,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw4ff7af37/products/NI_DD4576-010/NI_DD4576-010-1.JPG?sw=600&sh=600",
                 "stock": 15,
-                "category":"remeras"
+                "category":["remeras", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "La Camiseta Nike Dri-Fit Miler se inspira en amantes del running que disfrutan cada kilómetro de un modo distinto. Confeccionada en poliéster reciclado con mangas largas y cuello redondo con una cinta ligera en la parte posterior presenta un gráfico NIKE RUNNING repetido. Además, su ligereza suaviza el contacto con la piel y reduce los rasguños o roces, es una prenda esencial en el guarda ropa de cualquier runner."
         },
         {
                 "id": 2,
-                "title": "Remera Nature",
-                "price": 15999,
-                "img":"./public/images/imagen2.jpg",
+                "title": "Remera Running Nike Miller",
+                "price": 40.799,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwb3818118/products/NIDV9315-308/NIDV9315-308-1.JPG?sw=600&sh=600",
                 "stock": 18,
-                "category":"remeras"
+                "category":"remeras",
+                "envioGratis": false,
+                "descripcion": "Aumentá tu velocidad con la Remera Running Nike Miller Hombre. Confeccionada con poliéster reciclado de alta calidad que te garantiza durabilidad y resistencia en cada carrera. Su diseño con tecnología de absorción Dri-FIT se adapta a tu cuerpo y acompaña todos tus movimientos. El logo de la marca en el frente de la remera te ayuda a canalizar la velocidad de la marca con cada paso."
         },
         {
                 "id": 3,
-                "title": "Remera BrokenHeart",
-                "price": 14499,
-                "img":"./public/images/imagen3.jpg",
+                "title": "Remera Futbol Nike Dri-Fit",
+                "price": 40.949,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw97103e70/products/NIDR7567-386/NIDR7567-386-1.JPG?sw=600&sh=600",
                 "stock": 7,
-                "category":"remeras"
+                "category":"remeras",
+                "envioGratis": false,
+                "descripcion": "Mantenete concentrado mientras te ejercitás gracias a la Remera Fútbol Nike Dri-Fit Hombre. Su tela de poliéster con tecnología Dri-FIT absorbe el sudor de la piel para favorecer la respirabilidad y mantener tu cuerpo fresco y seco hasta en los entrenamientos más intensos. Además, su ajuste relajado ofrece libertad de movimiento y mayor comodidad para que solo te concentres en rendir al máximo. Su diseño camuflado eleva tu look deportivo a los niveles más altos y la convierte en una prenda muy versátil, ideal para emplearla no solo para entrenar, sino también para dar una vuelta por el shopping o salir con tus amigos. Sumá calidad y estilo a tu rutina diaria."
         },
         {
                 "id": 4,
-                "title": "Remera Emilia",
-                "price": 15999,
-                "img":"./public/images/imagen4.jpg",
+                "title": "Remera Nike Fran Jdi Verbiage Hombre",
+                "price": 32.199,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw9f2283c6/products/NIDZ2989-795/NIDZ2989-795-1.JPG?sw=600&sh=600",
                 "stock": 8,
-                "category":"remeras"
+                "category":["remeras", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "La Remera Nike Fran Jdi Verbiage Hombre fue confeccionada con algodón suave y ligero en un ajuste relajado para brindar un confort informal para todos los días. Cuenta con un diseño holgado en los hombros, el pecho y el cuerpo que ofrece un look atlético que podés combinar fácilmente con otras prendas."
         },
         {
                 "id": 5,
-                "title": "Remera Tupac",
-                "price": 13999,
-                "img":"./public/images/imagen5.jpg",
+                "title": "Remera Nike Sportwear Club",
+                "price": 35.499,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw32518e99/products/NI_AR4997-410/NI_AR4997-410-1.JPG?sw=600&sh=600",
                 "stock": 10,
-                "category":"remeras"
+                "category":"remeras",
+                "envioGratis": false,
+                "descripcion": "Con la Remera Nike Sportswear Club podrás lucir un estilo urbano y original, cómodo, un aspecto juvenil y clásico con el logo de Nike para brindar un singular look fresco rememorando lo mejor y característico de la marca. El algodón de esta remera es la suavidad que no podrás sacarte una vez que la lleves puesta. Para combinar tu look con tus jeans o bermudas favoritas."
         },
         {
                 "id": 6,
-                "title": "Remera Tortuga",
-                "price": 13999,
-                "img":"./public/images/imagen6.jpg",
+                "title": "Remera Nike Icon Futura",
+                "price": 39.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw21cc2763/products/NIAR5004-411/NIAR5004-411-1.JPG?sw=600&sh=600",
                 "stock": 10,
-                "category":"remeras"
+                "category":["remeras", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "La Remera Nike Icon Futura Hombre es tu nuevo básico infaltable para todos los días. Hecha con algodón que te brinda confort en casa uso, y con un diseño clásico y versátil para combinarlo con tus looks urbanos de todos los días. Usala para ir a entrenar o para una salida casual, pero siempre con comodidad y estilo."
         },
         {
                 "id": 7,
-                "title": "Remera Summer",
-                "price": 14499,
-                "img":"./public/images/imagen7.jpg",
+                "title": "Remera Nike PSG Dri-FIT Strike Fourth Top",
+                "price": 58.904,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwf639319f/products/NI_DH7716-013/NI_DH7716-013-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category":"remeras"
+                "category":"remeras",
+                "envioGratis": false,
+                "descripcion": "La Remera Nike PSG Dri-FIT Strike Fourth Top es perfecta para los verdaderos amantes del Paris Saint-Germain. Cuenta con detalles del club y un diseño totalmente moderno y lleno de vida. El ajuste entallado es perfecto para acompañar todos tus movimientos y la tela absorbente con tecnología Dri-FIT mantiene tu frescura para que puedas moverte dentro y fuera de la cancha con total comodidad."
         },
         {
                 "id": 8,
-                "title": "Remera 1975",
-                "price": 15999,
-                "img":"./public/images/imagen8.jpg",
+                "title": "Remera Nike Sportwear",
+                "price": 63.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6ed96259/products/NIFD1242-100/NIFD1242-100-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category":"remeras"
+                "category":"remeras",
+                "envioGratis": false,
+                "descripcion": "Llevá tu gran energía a cualquier salida con la Remera Nike Sportswear Hombre. Diseñada con un ajuste relajado en el cuerpo, ofrece una comodidad informal y facilidad para combinarla con otras prendas. Combinala con tu calzado favorito para obtener un look urbano completo."
+        },
+
+
+        
+        {
+                "id": 50,
+                "title": "Buzo Nike Sportwear Club Fleece",
+                "price": 81.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw661c7495/products/NIBV2662-010/NIBV2662-010-1.JPG?sw=600&sh=600",
+                "stock": 20,
+                "category": "buzos",
+                "envioGratis": false,
+                "descripcion": "Complementá tus looks con el Buzo Nike Sportswear Club Fleece Hombre. Para entrenar o vestir cómodo en tu día a día. Confeccionado con algodón supersuave que te brinda confort en cada uso. Además, su diseño de doble color en las mangas y el logo en el frente te aportan el estilo que solo Nike puede darte. Su versatilidad hace que puedas combinarlo con cualquier ropa, desde joggins hasta jeans."
         },
         {
-                "id": 9,
-                "title": "BUZO BOB´S NEGRO",
-                "price": 34499,
-                "img":"images/buzo-1.jpeg",
+                "id": 51,
+                "title": "Buzo Futbol Nike Strike22",
+                "price": 119.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw887117d4/products/NIDH9380-451/NIDH9380-451-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category": "buzos"
+                "category": ["buzos", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "Alentá a tu equipo favorito durante las bajas temperaturas con este Buzo Fútbol Nike Strike22 Hombre. Fabricado con materiales de alta calidad, brinda calidez y rendimiento en cada uso para que te sientas cómodo tanto adentro como afuera de la cancha. Cuenta con una capucha para protegerte de los fuertes vientos y con bolsillos laterales para que lleves lo que quieras a donde quieras. El escudo en el pecho demuestra a qué equipo pertenecés y su diseño versátil y liso es perfecto para que lo uses en cualquier salida. Demostrá tu amor por el Cuervo con este buzo altamente funcional."
         },
         {
-                "id": 10,
-                "title": "BUZO BOB´S BEIGE",
-                "price": 34499,
-                "img":"images/buzo-2.jpeg",
+                "id": 52,
+                "title": "Buzo Nike Pacer",
+                "price": 67.199,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw175e8d41/products/NI_BV4755-010/NI_BV4755-010-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category": "buzos"
+                "category": ["buzos", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "Mantene tu ritmo sin preocuparte por el frío con el Buzo Nike Pacer. Este diseño en negro es ideal para correr incluso en bajas temperaturas. Está elaborado 100% en poliéster para permitir una mayor movilidad y cuenta con un cierre en su parte superior."
         },
         {
-                "id": 11,
-                "title": "CAMPERA BOB´S JEAN GRIS",
-                "price": 34499,
-                "img":"images/campera-2.jpeg",
+                "id": 53,
+                "title": "Buzo Entrenamiento Nike Dry Graphic",
+                "price": 101.949,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dwf1cb3f0d/products/NICZ2425-010/NICZ2425-010-1.JPG?sw=600&sh=600",
+                "category": ["buzos", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "El Buzo Entrenamiento Nike Dry Graphic Hombre cuenta con tecnología absorbente de sudor que te ayuda a mantener la transpirabilidad antes, durante y después del entrenamiento. Este producto está confeccionado con un 100% de materiales sustentables, con una mezcla de fitops de poliéster reciclado y de algodón orgánico que te mantienen cómodo las 24 horas del día para que no detengas tu ritmo por nada. Sumá confort y estilo a tu rutina de ejercicios."
+        },
+
+
+        
+        {
+                "id": 100,
+                "title": "Campera Futbol Nike Dri-Fit Strike 23",
+                "price": 131.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw312a446a/products/NIDR2571-463/NIDR2571-463-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category": "camperas"
+                "category": "camperas",
+                "envioGratis": false,
+                "descripcion": "La Campera Fútbol Nike Dri-fit Strike 23 Hombre te brinda protección mientras lucís un estilo sin igual. Cuenta con la avanzada tecnología Dri-FIT que mantiene alejado el sudor de tu cuerpo para que lleves tu juego al siguiente nivel. Su tejido de poliéster aporta una perfecta elasticidad para que te muevas cómodamente, mientras que los puños acanalados ayudan a mantener las mangas en su lugar. Eso no es todo, los bolsillos con cierre son perfectos para guardar tus objetos esenciales durante tus entrenamientos."
         },
         {
-                "id": 12,
-                "title": "CAMPERA BOB´S JEAN BLANCO",
-                "price": 34499,
-                "img":"images/campera-1.jpeg",
+                "id": 101,
+                "title": "Campera Futbol Nike Strike 23",
+                "price": 131.999,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw95d07306/products/NIDR2571-658/NIDR2571-658-1.JPG?sw=600&sh=600",
                 "stock": 20,
-                "category": "camperas"
+                "category": ["camperas", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "La Campera Fútbol Nike Dri-fit Strike 23 Hombre te brinda protección mientras lucís un estilo sin igual. Cuenta con la avanzada tecnología Dri-FIT que mantiene alejado el sudor de tu cuerpo para que lleves tu juego al siguiente nivel. Su tejido de poliéster aporta una perfecta elasticidad para que te muevas cómodamente, mientras que los puños acanalados ayudan a mantener las mangas en su lugar. Eso no es todo, los bolsillos con cierre son perfectos para guardar tus objetos esenciales durante tus entrenamientos."
+        },
+        {
+                "id": 102,
+                "title": "Campera Nike Windrunner",
+                "price": 110.549,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw91153b12/products/NI_CZ9054-510/NI_CZ9054-510-1.JPG?sw=600&sh=600",
+                "stock": 20,
+                "category": ["camperas", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "Para deportistas que necesitan estar activos y cumplir sus rutinas con comodidad y velocidad, la Campera Nike Sportswear Windrunner es ideal por sus mangas sin costuras te darán libertad de movimiento, bolsillos con cierre seguros y un forro de malla transpirable que te da un look retro."
+        },
+        {
+                "id": 103,
+                "title": "Campera Nike Therma-Fit Repel Run Division Miler Fls",
+                "price": 100.574,
+                "img":"https://www.stockcenter.com.ar/dw/image/v2/BDTF_PRD/on/demandware.static/-/Sites-365-dabra-catalog/default/dw0666e502/products/NI_DD6102-011/NI_DD6102-011-1.JPG?sw=600&sh=600",
+                "stock": 20,
+                "category": ["camperas", "ofertas"],
+                "envioGratis": true,
+                "descripcion": "No dejes que el frío te frene; lleva la Campera Nike Therma-FIT Repel Run Division Miler Fls y ejercita sin importar el clima. Su tela es super abrigada gracias a la tecnología Therma-FIT que ayuda a regular tu temperatura corporal para mantener el calor. Cuenta con un sistema a prueba de agua para que puedas salir incluso bajo la lluvia y detalles reflectivos en áreas claves para que salgas de día o de noche. Su capucha y bolsillos complementan una campera que todo runner debería tener en su ropero."
         }
+        
 ]

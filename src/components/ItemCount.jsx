@@ -40,8 +40,9 @@ const ItemCount = ({stock}) => {
                                         </div>
                                 </div>
                         </div>
+                        
                         <div className="row">
-                                <div className="col">
+                                <div className="col my-2">
                                         <button type="button" className="btn bg-black text-white" onClick={onAdd}>Agregar Al Carrito</button>
                                 </div>
                         </div>
