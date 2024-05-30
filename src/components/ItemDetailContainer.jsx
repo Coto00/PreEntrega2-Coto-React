@@ -1,51 +1,61 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { Link, useParams } from "react-router-dom";
-import {doc, getDoc, getFirestore} from "firebase/firestore"
+import { doc, getDoc, getFirestore } from "firebase/firestore";
+import Loading from "./Loading";
 
 const ItemDetailContainer = () => {
-        const [item, setItem] = useState(null);
-        const {id} = useParams();
+    const [item, setItem] = useState(null);
+    const [visible, setVisible] = useState(true);
+    const { id } = useParams();
 
-        // useEffect(() => {
-        //         const promesa = new Promise(resolve => {
-        //                 setTimeout(() => {
-        //                         const producto = arrayProductos.find(item => item.id === parseInt(id));
-        //                         resolve(producto);
-        //                 },)
-        //         });
+    useEffect(() => {
+        const db = getFirestore();
+        const itemRef = doc(db, "items", id);
 
-        //         promesa.then(respuesta => {
-        //                 setItem(respuesta);
-        //         })
-        // }, [id])
+        let isMounted = true;
 
-        useEffect(() => {
-                const db = getFirestore();
-                const itemRef = doc(db, "items", id)
-                getDoc(itemRef).then(snapShot =>{
-                        if (snapShot.exists()) {
-                                setItem({ id: snapShot.id, ...snapShot.data() });
-                                } 
-                        })
-                        }, [id]);
+        getDoc(itemRef)
+            .then(snapShot => {
+                if (isMounted) {
+                    if (snapShot.exists()) {
+                        setItem({ id: snapShot.id, ...snapShot.data() });
+                    } else {
+                        setItem(null); 
+                    }
+                }
+            })
+            .catch(error => {
+                console.error("Error getting document:", error);
+                if (isMounted) {
+                    setItem(null); 
+                }
+            })
+            .finally(() => {
+                if (isMounted) {
+                    setVisible(false);
+                }
+            });
 
+        return () => {
+            isMounted = false;
+        };
+    }, [id]);
 
-        return(
-                <div className="container">
-                        <div className="row">
-                                <div className="col">
-                                <Link to={"/"}>
-                                        <button className="btn bg-dark text-white">← Volver</button>
-                                </Link>
-                                </div>
-                        </div>
-                        <div className="row my-5">
-                                {item ? <ItemDetail item={item} /> : <p>Cargando...</p>}
-                        </div>
+    return (
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <Link to={"/"}>
+                        <button className="btn bg-dark text-white">← Volver</button>
+                    </Link>
                 </div>
-
-        )
-}
+            </div>
+            <div className="row my-5">
+                {visible ? <Loading/> : <ItemDetail item={item} />}
+            </div>
+        </div>
+    );
+};
 
 export default ItemDetailContainer;

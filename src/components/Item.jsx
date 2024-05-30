@@ -22,7 +22,7 @@ const Item = ({item}) => {
                                 </p>
                                 
                                 <p>
-                                        <button className="btn bg-dark text-white" onClick={() => { agregarProducto(item.id); }}>Comprar</button>
+                                        <button className="btn bg-dark text-white" onClick={() => {addItem(item.id); }}>Comprar</button>
                                 </p>
                                 
                                 </div>

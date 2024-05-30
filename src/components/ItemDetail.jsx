@@ -1,6 +1,15 @@
+import { useContext } from "react";
 import ItemCount from "./ItemCount";
+import { CartContext } from "./context/CartContext";
 
 const ItemDetail = ({item}) => {
+        
+        const {addItem} = useContext(CartContext)
+
+        const onAdd = (quantity) => {
+                addItem(item, quantity);
+                console.log("Agregaste: " + quantity + " productos!");
+                }
 
         const priceIn3Cuotas = item.price / 3;
         const priceIn6Cuotas = (item.price * 1.10) / 6;
@@ -26,7 +35,7 @@ const ItemDetail = ({item}) => {
                                         <h3>Descripcion</h3>
                                         <p>{item.descripcion}</p>
                                         
-                                        <ItemCount stock={item.stock}/>
+                                        <ItemCount stock={item.stock} onAdd={onAdd}/>
                                 </div>
                         </div>
                 </div>

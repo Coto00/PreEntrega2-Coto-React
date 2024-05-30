@@ -2,22 +2,13 @@ import { useEffect, useState } from "react"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom";
 import {collection, getDocs, getFirestore, query, where} from "firebase/firestore"
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
         const [items, setItems] = useState([]);
         const {id} = useParams();
+        const [visible, setVisible] = useState(true);
 
-        // useEffect(() => {
-        //         const promesa = new Promise(resolve => {
-        //                 setTimeout(() => {
-        //                         resolve(id ? itemsCollection.filter(item => item.category.includes(id)) : itemsCollection);
-        //                 },200)
-        //         });
-
-        //         promesa.then(respuesta => {
-        //                 setItems(respuesta);
-        //         })
-        // }, [id])
 
         useEffect(() => {
                 const db = getFirestore();
@@ -33,6 +24,7 @@ const ItemListContainer = () => {
                 getDocs(itemsQuery).then(snapShot => {
                         if (snapShot.size > 0) {
                         setItems(snapShot.docs.map(item => ({ id: item.id, ...item.data() })));
+                        setVisible(false)
                         } else {
                         setItems([]);
                         }
@@ -48,7 +40,7 @@ const ItemListContainer = () => {
                 <div className="container">
                         <div className="row text-uppercase"><h1>Productos</h1></div>
                         <div className="row my-5">
-                                        <ItemList items={items}/>
+                                        {visible ? <Loading/> : <ItemList items={items}/>}
                         </div>
                 </div>
 

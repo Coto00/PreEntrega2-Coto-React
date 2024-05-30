@@ -59,11 +59,7 @@ const Navbar = () => {
                                                     Camperas
                                                 </NavLink>
                                             </li>
-                                            <li>
-                                                <NavLink className="dropdown-item text-white" to={"/category/ofertas"}>
-                                                    Ofertas
-                                                </NavLink>
-                                            </li>
+                                            
                                         </ul>
                                     </li>
                                 </ul>

@@ -8,11 +8,14 @@ import Footer from "./components/Footer"
 import './App.css'
 import Contacto from "./components/Contacto";
 import Checkout from "./components/Checkout";
+import Cart from "./components/Cart";
+import CartContextProvider from "./components/context/CartContext";
 
 
 function App() {
   return(
-    <BrowserRouter>
+    <CartContextProvider>
+      <BrowserRouter>
     
     <NavBar/>
     
@@ -27,11 +30,14 @@ function App() {
       <Route path={"/category/:id"} element={<ItemListContainer/>}/>
       <Route path={"/category/Contacto"} element={<Contacto/>}/>
       <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
+      <Route path={"/cart"} element={<Cart />} />
       <Route path={"/checkout"} element={<Checkout />} />
       <Route path={"*"} element={<Error404/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
+    </CartContextProvider>
+    
   )
 }
 

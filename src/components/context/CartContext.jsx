@@ -5,21 +5,42 @@ export const CartContext = createContext();
 
 
 const CartContextProvider = ({children}) => {
-        const productos = arrayProductos
-        const [carrito, setCarrito] = useState([]);
+        const [cart, setCart] = useState([]);
 
-        const totalProductos = () => {
-                return carrito.length
-        }
-
-        const agregarProducto = (id) => {
-                const producto = productos.find(item => item.id === id);
-                setCarrito([...carrito, {...producto}]);
-                console.log("Producto Agregado!")
-        }
+        const addItem = (item, quantity) => {
+                if (isInCart(item.id)) {
+                        let product = cart.find(prod => prod.id === item.id);
+                        product.quantity += quantity;
+                        setCart([...cart]);
+                } else {
+                        setCart([...cart, {...item, quantity:quantity}]);
+                }
+                }
+        
+                const removeItem = (id) => {
+                const items = cart.filter(item => item.id !== id);
+                setCart([...items]);
+                }
+        
+                const clear = () => {
+                setCart([]);
+                }
+        
+                const isInCart = (id) => {
+                return cart.some(item => item.id === id);
+                }
+        
+                const getCountProducts = () => {
+                return cart.reduce((acum, item) => acum += item.quantity, 0);
+                }
+        
+                const getSumProducts = () => {
+                return cart.reduce((acum, item) => acum += item.quantity * item.price, 0);
+                }
+        
         
         return(
-                <CartContext.Provider value={{productos, carrito, totalProductos, agregarProducto}}>
+                <CartContext.Provider value={{cart, addItem, removeItem, clear, getCountProducts, getSumProducts}}>
                         {children}
                 </CartContext.Provider>
         )
