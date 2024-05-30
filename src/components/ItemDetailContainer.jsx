@@ -1,24 +1,34 @@
 import { useEffect, useState } from "react"
-import arrayProductos from "./json/productos.json"
 import ItemDetail from "./ItemDetail";
 import { Link, useParams } from "react-router-dom";
+import {doc, getDoc, getFirestore} from "firebase/firestore"
 
 const ItemDetailContainer = () => {
-        const [item, setItem] = useState([]);
+        const [item, setItem] = useState(null);
         const {id} = useParams();
 
-        useEffect(() => {
-                const promesa = new Promise(resolve => {
-                        setTimeout(() => {
-                                const producto = arrayProductos.find(item => item.id === parseInt(id));
-                                resolve(producto);
-                        },)
-                });
+        // useEffect(() => {
+        //         const promesa = new Promise(resolve => {
+        //                 setTimeout(() => {
+        //                         const producto = arrayProductos.find(item => item.id === parseInt(id));
+        //                         resolve(producto);
+        //                 },)
+        //         });
 
-                promesa.then(respuesta => {
-                        setItem(respuesta);
-                })
-        }, [id])
+        //         promesa.then(respuesta => {
+        //                 setItem(respuesta);
+        //         })
+        // }, [id])
+
+        useEffect(() => {
+                const db = getFirestore();
+                const itemRef = doc(db, "items", id)
+                getDoc(itemRef).then(snapShot =>{
+                        if (snapShot.exists()) {
+                                setItem({ id: snapShot.id, ...snapShot.data() });
+                                } 
+                        })
+                        }, [id]);
 
 
         return(
@@ -31,7 +41,7 @@ const ItemDetailContainer = () => {
                                 </div>
                         </div>
                         <div className="row my-5">
-                                        <ItemDetail item={item}/>
+                                {item ? <ItemDetail item={item} /> : <p>Cargando...</p>}
                         </div>
                 </div>
 

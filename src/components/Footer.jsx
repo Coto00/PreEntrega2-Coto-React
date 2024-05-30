@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 
 
 const Footer = () => {
@@ -8,10 +9,18 @@ const Footer = () => {
                 <div className="col-6 col-md-2 mb-3">
                         <h5>Tienda</h5>
                         <ul className="nav flex-column">
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Remeras</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Buzos</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Camperas</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Ofertas</a></li>
+                        <li className="nav-item mb-2"><NavLink className="nav-link p-0 text-muted" to={"/category/remeras"}>
+                                                Remeras
+                                                </NavLink></li>
+                        <li className="nav-item mb-2"><NavLink className="nav-link p-0 text-muted" to={"/category/buzos"}>
+                                                Buzos
+                                                </NavLink></li>
+                        <li className="nav-item mb-2"><NavLink className="nav-link p-0 text-muted" to={"/category/camperas"}>
+                                                Camperas
+                                                </NavLink></li>
+                        <li className="nav-item mb-2"><NavLink className="nav-link p-0 text-muted" to={"/category/ofertas"}>
+                                                Ofertas
+                                                </NavLink></li>
                         </ul>
                 </div>
 

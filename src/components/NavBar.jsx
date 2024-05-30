@@ -4,7 +4,7 @@ import CartWidget from "./CartWidget";
 import '../assets/css/style.css'
 
 
-const Navbar = () => {
+const Navbar = () => { 
         return (
             <>
             <nav className="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
@@ -71,7 +71,7 @@ const Navbar = () => {
                                     <input
                                         className="form-control me-2"
                                         type="search"
-                                        placeholder="Buscar"
+                                        placeholder="Ej: Remera"
                                         aria-label="Buscar"
                                     />
                                     <button className="btn btn-dark text-white" type="submit">

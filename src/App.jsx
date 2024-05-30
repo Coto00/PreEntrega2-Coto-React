@@ -5,8 +5,6 @@ import ItemDetailContainer from "./components/ItemDetailContainer"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Error404 from "./components/Error404"
 import Footer from "./components/Footer"
-import Cards from "./components/Cards";
-import CartContextProvider from "./components/context/CartContext";
 import './App.css'
 import Contacto from "./components/Contacto";
 

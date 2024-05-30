@@ -1,14 +1,8 @@
 const Contacto = () => {
         return(
                 <div classNameName="container">
-                        <div classNameName="row">
-                                <div classNameName="col">
-                                        <h1>Contacto</h1>
-                                </div>
-                        </div>
-                        <div classNameName="row">
-                        
-                        </div>
+                        <div className="row text-uppercase"><h1>Contacto</h1></div>
+                        <div className="row"></div>
                 </div>
         )
 }

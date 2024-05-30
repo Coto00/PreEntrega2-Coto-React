@@ -14,6 +14,9 @@ const ItemDetail = ({item}) => {
                                 <img src={item.img} className="img-fluid" alt={item.title} />
                                 </div>
                                 <div className="col">
+                                        <p>
+                                        {item.envioGratis ? <span className="text-success fw-semibold p-1">ENVIO GRATIS</span> : ""}
+                                        </p>
                                         <h1>{item.title}</h1>
                                         <p><h3><b>${item.price}</b><br /></h3>
                                         3 Cuotas sin interes de <b>${priceIn3Cuotas.toFixed(3)}</b>, 
