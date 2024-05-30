@@ -67,7 +67,7 @@ const Navbar = () => {
                                     <input
                                         className="form-control me-2"
                                         type="search"
-                                        placeholder="Ej: Remera"
+                                        placeholder="Ej: Remera Nike"
                                         aria-label="Buscar"
                                     />
                                     <button className="btn btn-dark text-white" type="submit">

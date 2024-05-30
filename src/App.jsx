@@ -43,8 +43,3 @@ function App() {
 
 
 export default App
-
-
-// <CartContextProvider>
-//<Cards/>
-//</CartContextProvider>

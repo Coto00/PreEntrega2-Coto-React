@@ -26,9 +26,6 @@ const Checkout = () => {
 
     const generarOrden = () => {
         
-
-
-
         if (!validarCampos()) {
             return;
         }
@@ -43,6 +40,7 @@ const Checkout = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(({ id }) => {
             setOrderId(id);
+            clear();
         })
     }
 
@@ -61,6 +59,7 @@ const Checkout = () => {
 
     return (
         <div className="container my-5">
+            {!orderId ? 
             <div className="row">
                 <div className="col">
                     <form>
@@ -85,9 +84,9 @@ const Checkout = () => {
                             {errors.email && <div className="invalid-feedback">Este campo es obligatorio.</div>}
                         </div>
                         <div className="mb-3">
-                            <label className="form-label">Telephone</label>
+                            <label className="form-label">Telefono</label>
                             <input 
-                                type="tel" 
+                                type="number" 
                                 className={`form-control ${errors.telephone ? 'is-invalid' : ''}`} 
                                 value={telephone} 
                                 onChange={(e) => { setTelephone(e.target.value) }} 
@@ -123,6 +122,7 @@ const Checkout = () => {
                     </table>
                 </div>
             </div>
+            : "" }
             <div className="row my-5">
                 <div className="col text-center">
                     {orderId ? (
