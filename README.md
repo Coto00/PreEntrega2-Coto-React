@@ -42,4 +42,4 @@ Procede al pago para completar una compra.
 
 
 ## Contacto
-Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo a través de thomascoto@gmail.com
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo a través de thomascoto23@gmail.com
