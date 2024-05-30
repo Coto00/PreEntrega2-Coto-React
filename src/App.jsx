@@ -7,6 +7,7 @@ import Error404 from "./components/Error404"
 import Footer from "./components/Footer"
 import './App.css'
 import Contacto from "./components/Contacto";
+import Checkout from "./components/Checkout";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path={"/category/:id"} element={<ItemListContainer/>}/>
       <Route path={"/category/Contacto"} element={<Contacto/>}/>
       <Route path={"/item/:id"} element={<ItemDetailContainer/>}/>
+      <Route path={"/checkout"} element={<Checkout />} />
       <Route path={"*"} element={<Error404/>}/>
     </Routes>
     <Footer/>
