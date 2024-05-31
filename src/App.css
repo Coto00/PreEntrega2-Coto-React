@@ -41,3 +41,8 @@
     .navbar-toggler {
         border: none;
     }
+    
+    .bigicon {
+        font-size: 2.2em;
+        vertical-align: middle; 
+    }
