@@ -61,9 +61,9 @@ const Footer = () => {
                 <div className="d-flex flex-column flex-sm-row justify-content-around py-4 my-4 border-top">
                 <p>© 2024 BOB´S, Inc. Todos los derechos reservados.</p>
                 <ul className="list-unstyled d-flex">
-                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/twitter.svg" alt="Twitter Icon"/></a></li>
-                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/facebook.svg" alt="Facebook Icon"/></a></li>
-                        <li className="ms-3"><a className="link-light" href="#"><img src="../src/assets/images/instagram.svg" alt="Instagram Icon"/></a></li>
+                        <li className="ms-3"><a className="link-light" href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li className="ms-3"><a className="link-light" href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li className="ms-3"><a className="link-light" href="#"><i class="bi bi-instagram"></i></a></li>
                         
                 </ul>
                 </div>
